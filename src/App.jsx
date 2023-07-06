@@ -43,11 +43,12 @@ function App() {
 					/>
 				</div>
 			</header>
-			<DisplayImage
-				uploadedImage={uploadedImage}
-				colorPalette={colorPalette}
-			/>
-			;
+			<main className="main">
+				<DisplayImage
+					uploadedImage={uploadedImage}
+					colorPalette={colorPalette}
+				/>
+			</main>
 		</>
 	);
 }
