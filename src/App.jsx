@@ -43,10 +43,10 @@ function App() {
 					/>
 				</div>
 			</header>
-			<main className="main">
-				Hello Ma!
-				<DisplayImage />
-			</main>
+			<DisplayImage
+				uploadedImage={uploadedImage}
+				colorPalette={colorPalette}
+			/>
 			;
 		</>
 	);
