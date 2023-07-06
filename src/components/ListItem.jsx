@@ -6,12 +6,16 @@ const copy = <i className="far fa-copy"></i>;
 const ListItem = ({ rgb, hex }) => {
 	const [copied, setCopied] = useState(false);
 
-	const copyToClipboard = (str) => {};
+	const copyToClipboard = (e) => {
+		const color = e.target.innerText;
+		navigator.clipboard.writeText(color);
+	};
 
 	return (
 		<div className="colorName" style={{ background: rgb }}>
 			<span
-				onClick={() => {
+				onClick={(e) => {
+					copyToClipboard(e);
 					setCopied(true);
 					setTimeout(() => {
 						setCopied(false);
