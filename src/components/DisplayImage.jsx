@@ -22,7 +22,7 @@ export default function DisplayImage({ uploadedImage, colorPalette }) {
 			</div>
 
 			{colorPalette && (
-				<ul>
+				<ul className="colors">
 					{colorPalette.map((color, index) => {
 						const rgb = `rgb(${color.join(",")})`;
 						console.log(rgb);

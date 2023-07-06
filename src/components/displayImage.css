@@ -32,3 +32,11 @@ img {
 	object-position: center;
 	border-radius: 0.5rem;
 }
+
+.colors {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}

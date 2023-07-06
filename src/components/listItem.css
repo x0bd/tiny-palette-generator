@@ -1,4 +1,31 @@
+.far {
+	font-size: 1.3rem;
+}
 .colorName {
-	width: 8rem;
-	height: 8rem;
+	font-size: 1.8rem;
+	width: 12rem;
+	height: 12rem;
+	position: relative;
+	border-radius: 0.6rem;
+	transition: all 0.3s ease-in-out;
+	text-transform: uppercase;
+}
+
+.colorName:hover {
+	transform: translateY(-5px);
+}
+
+.colorName span {
+	color: rgb(237, 231, 237);
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border-top: 2px solid #ffffff2f;
+	border-bottom-right-radius: 0.4rem;
+	border-bottom-left-radius: 0.4rem;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
 }

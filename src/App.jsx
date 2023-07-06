@@ -18,7 +18,7 @@ function App() {
 
 			img.onload = () => {
 				const colorThief = new ColorThief();
-				const colorPalette = colorThief.getPalette(img, 6);
+				const colorPalette = colorThief.getPalette(img, 5);
 
 				setUploadedImage(event.target.result);
 				setColorPalette(colorPalette);
